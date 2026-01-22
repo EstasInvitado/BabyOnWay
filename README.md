@@ -6,7 +6,7 @@
  <!-- Metadatos Open Graph -->
 <meta property="og:title" content="¡Bebe en camino! 🤰">
 <meta property="og:description" content="¡Bienvenido!">
-<meta property="og:image" content="https://github.com/EstasInvitado/BabyOnWay/blob/main/Bebe.PNG?raw=true">
+<meta property="og:image" content="https://github.com/EstasInvitado/BabyOnWay/blob/main/Bebe.png?raw=true">
 <meta property="og:url" content="https://EstasInvitado.github.io/BabyOnWay/">
 
 <title>Invitación de Boda — Taylor & Travis</title>
@@ -35,18 +35,18 @@
 <style>
 :root{
   /* Paleta neutra */
-  --bg: #88A98C;
-  --bg-2:#F2EFED;
+  --bg: #88398C;
+  --bg-2:url('https://github.com/EstasInvitado/BabyOnWay/blob/main/Ultrasonido.png?raw=true');
   --ink:#2b2b2b;
   --muted:#8d877f;
   --line:#d8d4cf;
 
   /* Imágenes: cámbialas por las tuyas */
-  --hero: url('https://github.com/EstasInvitado/BabyOnWay/blob/main/ultrasonido.PNG?raw=true');
-  --img1: url('https://raw.githubusercontent.com/nellyaldana/Nelly-y-samuel/refs/heads/main/img13.png');
-  --img2: url('https://github.com/nellyaldana/Nelly-y-samuel/blob/main/flores5.jpg?raw=true');
-  --ornamento: url('https://file.aiquickdraw.com/imgcompressed/img/compressed_9a7ec23d36126cd2ce32b8cd4b12b8da.webp');
-  --foto1: url('https://github.com/BabyOnWay/Taylor-Travis/blob/main/ultrasonido.PNG?raw=true');
+  --hero: url('https://github.com/EstasInvitado/BabyOnWay/blob/main/Ultrasonido.png?raw=true');
+  --img1: url('https://github.com/EstasInvitado/BabyOnWay/blob/main/fondoestrellas.png?raw=true');
+  --img2: url('https://github.com/EstasInvitado/BabyOnWay/blob/main/Ultrasonido.png?raw=true');
+  --ornamento: url('https://github.com/EstasInvitado/BabyOnWay/blob/main/Bebe.png?raw=true'); 
+  --foto1: url('https://github.com/EstasInvitado/BabyOnWay/blob/main/Ultrasonido.png?raw=true');
   --foto2: url('https://github.com/EstasInvitado/Taylor-Travis/blob/main/pareja4.png?raw=true');
    --foto3: url('https://github.com/EstasInvitado/Taylor-Travis/blob/main/pareja5.png?raw=true');
 
@@ -73,7 +73,7 @@ body{
   display:grid;
   place-items:center;
   padding:64px 18px 24px;
- background: linear-gradient(to bottom, #F5ECE6, #F2EFED);
+background-image: var(--img1);
 
 }
 
@@ -209,7 +209,7 @@ body{
   text-shadow: 0 8px 18px rgba(0,0,0,.35);
   transform:translateY(18px);
   opacity:0;
-  animation:fadeUp 1300ms ease forwards 2s;
+  animation:fadeUp 1300ms ease forwards 1s;
 }
 .hero-y{
   font-family: "Fleur De Leah", cursive;
@@ -242,7 +242,7 @@ body{
 .ornament-top{
   width:100%;
   height:80px; /* altura del adorno */
- background: url("https://github.com/EstasInvitado/Taylor-Travis/blob/main/anillo.png?raw=true")
+ background: url("https://github.com/EstasInvitado/BabyOnWay/blob/main/Bebe.png?raw=true")
               no-repeat center;
   background-size:contain;
   margin: 0 auto;
@@ -252,7 +252,7 @@ body{
 .ornament-abajo {
   width: 100%;
   height: 80px;
-  background: url("https://github.com/EstasInvitado/Taylor-Travis/blob/main/decorativogrande.png?raw=true")
+  background: url("https://github.com/EstasInvitado/BabyOnWay/blob/main/Bebe.png?raw=true")
               no-repeat center;
   background-size: contain;
   opacity: 0.8;
@@ -261,7 +261,7 @@ body{
   bottom: 40px; /* queda encima de la fecha */
   left: 0;
 
-  transform: rotate(180deg);
+  
   pointer-events: none;
 }
 
@@ -280,15 +280,15 @@ body{
 }
  .section{
   padding:184px 22px;
-  background:#F2EFED;
+  background-image: var(--img1);
   background-repeat: no-repeat;   /* no se repite */
   background-position: center;    /* centrada */
   background-size: cover;
    
 }
 
-.section.alt{padding:104px 22px;  background:var(--bg-2); }
-.section.alt1{background-image: var(--img1); }
+.section.alt{padding:104px 22px; }
+
 .section.foto1{ background:var(--foto1); }
 
    
@@ -355,7 +355,7 @@ body{
 .card{
   font-size:20px;
   text-align: center;
-  width: min(1300px, 85vw);
+  width: min(300px, 85vw);
   background:#fff; border: hidden 15px floralwhite; border-radius:0px;
   padding:24px; box-shadow:0 20px 28px rgba(0,0,0,.05);
    
@@ -369,25 +369,25 @@ body{
 }
 .card-img {
   width: 100%;          /* ocupa todo el ancho de su contenedor */
-  max-width: 80px;     /* ancho máximo reducido */
+  max-width: 2000px;     /* ancho máximo reducido */
   height: auto;         /* mantiene proporción */
   display: block;
   margin: 0 auto 16px;  /* centrada y con espacio debajo */
   border-radius: 8px;   /* opcional */
 }
 .details .card p:nth-of-type(1) {
-  font-family: "Castoro Titling", serif;  font-size:13px;/* primera línea */
+  font-family: "Ballet", serif;  font-size:13px;/* primera línea */
 }
 
 .details .card p:nth-of-type(2) {
-  font-family: "Yrsa", serif; font-size:13px;/* segunda línea */
+  font-family: "Ballet", serif; font-size:13px;/* segunda línea */
 }
   .details .card a:nth-of-type(1) {
-  font-family: "Yrsa", serif; font-size:13px;/* segunda línea */
+  font-family: "Ballet", serif; font-size:13px;/* segunda línea */
 }
   
   
-.card h3{font-family:'Italianno'; margin:0 0 8px; font-weight:600; }
+.card h3{font-family:'Ballet'; margin:0 0 8px; font-weight:600; }
 .card p{ margin:6px 0; color:#4d4a45; }
 .btn{
   display:inline-block; margin-top:12px; padding:10px 18px;
@@ -614,10 +614,36 @@ footer{
 img {
   border-radius: 0 !important;
 }
+#snow{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* no bloquea clics */
+  overflow: hidden;
+  z-index: 9999;
+}
+
+.snowflake{
+  position: absolute;
+  top: -10px;
+  color: white;
+  font-size: 1em;
+  user-select: none;
+  animation: fall linear infinite;
+}
+
+@keyframes fall{
+  to{
+    transform: translateY(110vh);
+  }
+}
+
 </style>
 </head>
 <body>
-
+<div id="snow"></div>
 <!-- PORTADA: 3 franjas con animaciones independientes -->
 <header class="hero" id="inicio">
   <div class="monogram">
@@ -627,10 +653,13 @@ img {
 </div>
 
 
-   <section class="section alt2" id="galeria">
-        <div class="memories reveal">
-  
-     <div class="g i1 reveal"></div>
+  <section class="section alt" >
+   
+      <article class="card reveal">
+          <img src="https://github.com/EstasInvitado/BabyOnWay/blob/main/Ultrasonido1.png?raw=true" 
+       alt="Iglesia" class="card-img">
+       <h3>Estamos esperando un bebé!</h3>
+</section>
     
   </div>
 
@@ -645,6 +674,28 @@ img {
 </header>
 
 
+<script>
+const snowContainer = document.getElementById("snow");
+
+function createSnowflake(){
+  const snowflake = document.createElement("div");
+  snowflake.classList.add("snowflake");
+  snowflake.innerHTML = "⭐";
+
+  snowflake.style.left = Math.random() * 100 + "vw";
+  snowflake.style.fontSize = Math.random() * 10 + 10 + "px";
+  snowflake.style.opacity = Math.random();
+  snowflake.style.animationDuration = Math.random() * 5 + 5 + "s";
+
+  snowContainer.appendChild(snowflake);
+
+  setTimeout(() => {
+    snowflake.remove();
+  }, 10000);
+}
+
+setInterval(createSnowflake, 200);
+</script>
 
 
 
@@ -715,5 +766,7 @@ window.addEventListener('scroll', () => {
 });
  
 </script>
+
+
 </body>
 </html>
