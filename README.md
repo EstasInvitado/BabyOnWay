@@ -9,7 +9,7 @@
 <meta property="og:image" content="https://github.com/EstasInvitado/BabyOnWay/blob/main/Bebe.png?raw=true">
 <meta property="og:url" content="https://EstasInvitado.github.io/BabyOnWay/">
 
-<title>Invitación de Boda — Taylor & Travis</title>
+<title>Bebe en camino...</title>
 
 <!-- Carga de la fuente Ballet desde Google Fonts -->
  <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
@@ -201,13 +201,16 @@ background-image: var(--img1);
   pointer-events:none;
 }
 .hero-names{
-  font-family: "ballet", cursive;
+     position: relative;
+  top: -180px;   /* sube */
+  
+  font-family: "Style Script", cursive;
   font-size: clamp(60px, 8vw, 1px);
   font-weight:80;
   letter-spacing: 4px;
   color:#ffffff;
-  text-shadow: 0 8px 18px rgba(0,0,0,.35);
-  transform:translateY(18px);
+  text-shadow: 2px .10px 3px rgba(0.35,0.35,0,.35);
+  transform: translateY(-30px);
   opacity:0;
   animation:fadeUp 1300ms ease forwards 1s;
 }
