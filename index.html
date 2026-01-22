@@ -397,17 +397,33 @@ background-image: var(--img1);
   display: block;
 }
 .video-section{
-  padding: 80px 20px;   /* separación arriba y abajo */
+  background-image: var(--img1);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  padding: 80px 0; /* espacio para que el fondo se luzca */
 }
+.video-text{
+  margin-top: 18px;
+  text-align: center;
+  font-size: 32px;   /* 🔥 aquí lo haces más grande */
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+
 
 .video-container{
   display: flex;
-  justify-content: center;
+  flex-direction: column; /* 🔑 esto lo pone abajo */
+  align-items: center;    /* centra horizontalmente */
 }
+
 
 .video-bebe{
   width: 100%;
-  max-width: 480px;     /* tamaño del video */
+  max-width: 280px;     /* tamaño del video */
   height: auto;
   border-radius: 16px;
 }
@@ -726,17 +742,42 @@ img {
 <section class="section video-section" id="video-bebe">
   <div class="video-container">
     <video
+      id="videoAuto"
       class="video-bebe"
-      controls
+      muted
+      playsinline
       preload="metadata"
+      controls
     >
       <source src="https://github.com/EstasInvitado/BabyOnWay/raw/refs/heads/main/WhatsApp%20Video%202026-01-21%20at%206.28.22%20PM.mp4" type="video/mp4">
-      Tu navegador no soporta video HTML5
     </video>
+
+    <p class="video-text">
+      Escucha mis latidos <span class="heart">♥</span>
+    </p>
   </div>
 </section>
 
 
+
+
+<script>
+const video = document.getElementById('videoAuto');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      video.play();
+    } else {
+      video.pause();
+    }
+  });
+}, {
+  threshold: 0.5 // se reproduce cuando el 50% es visible
+});
+
+observer.observe(video);
+</script>
 
 
 <script>
