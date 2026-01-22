@@ -4,9 +4,9 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
  <!-- Metadatos Open Graph -->
-<meta property="og:title" content="Mira como Trump invade Groenlandia 😧">
+<meta property="og:title" content="Para la familia Guillen">
 <meta property="og:description" content="Primeras imagenes">
-<meta property="og:image" content="https://github.com/EstasInvitado/BabyOnWay/blob/main/Trump.png?raw=true">
+<meta property="og:image" content="https://github.com/EstasInvitado/BabyOnWay/blob/main/noticia.png?raw=true">
 <meta property="og:url" content="https://EstasInvitado.github.io/BabyOnWay/">
 
 <title>Bebe en camino...</title>
