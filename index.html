@@ -14,17 +14,16 @@
 <!-- Carga de la fuente Ballet desde Google Fonts -->
  <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
   <!-- Importa algunas fuentes de ejemplo de la categoría "Fancy" -->
+  <
   <link href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Baskerville&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Gwendolyn&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Yrsa&display=swap" rel="stylesheet">
   
+  <link href="https://fonts.googleapis.com/css2?family=Gwendolyn&display=swap" rel="stylesheet">
+
   <link href="https://fonts.googleapis.com/css2?family=Hi-Melody&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Grey+Qo&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
  
  
 <!-- Importar fuente Italianno desde Google Fonts -->
@@ -43,7 +42,7 @@
 
   /* Imágenes: cámbialas por las tuyas */
   --hero: url('https://github.com/EstasInvitado/BabyOnWay/blob/main/Ultrasonido.png?raw=true');
-  --img1: url('https://github.com/EstasInvitado/BabyOnWay/blob/main/fondoestrellas.png?raw=true');
+  --img1: url('https://github.com/EstasInvitado/BabyOnWay/blob/main/FONDOhojas.png?raw=true');
   --img2: url('https://github.com/EstasInvitado/BabyOnWay/blob/main/Ultrasonido.png?raw=true');
   --ornamento: url('https://github.com/EstasInvitado/BabyOnWay/blob/main/Bebe.png?raw=true'); 
   --foto1: url('https://github.com/EstasInvitado/BabyOnWay/blob/main/Ultrasonido.png?raw=true');
@@ -60,7 +59,7 @@ html,body{height:100%}
 body{
   margin:0;
    font-family: 'Gwendolyn';
-  color:var(--ink);
+  color:#;
   background:linear-gradient(#faf9f7, #faf9f7);
   line-height:1.45;
   overflow-x:hidden;
@@ -85,8 +84,8 @@ background-image: var(--img1);
   right: 0;
   margin: auto;
   width: max-content;
-  font-size: 38px;
-  letter-spacing: 2px;
+  font-size: 28px;
+  letter-spacing: 0px;
   color: var(--ink);
   opacity: 0;
   text-align: center;
@@ -96,8 +95,8 @@ background-image: var(--img1);
 /* Save & Date */
 .monogram .ital {
   font-family: 'Italianno', cursive;
-  font-weight: 500;
-     letter-spacing: 5px;
+  font-weight: 50;
+     letter-spacing: 0px;
 }
 
 /* the */
@@ -199,17 +198,26 @@ background-image: var(--img1);
   display:grid;
   place-items:center;
   pointer-events:none;
+  text-align: center;
+}
+.bebe-nombre{
+  font-family: 'Abril Fatface', cursive;
+  font-weight: 300;
+  opacity:0.4;
+  letter-spacing: 4px;
+  color: #6B7566;
+  font-size: clamp(60px, 8vw, 50px);
+  
 }
 .hero-names{
      position: relative;
-  top: -180px;   /* sube */
-  
+  top: -330px;   /* sube */
   font-family: "Style Script", cursive;
-  font-size: clamp(60px, 8vw, 1px);
-  font-weight:80;
-  letter-spacing: 4px;
-  color:#ffffff;
-  text-shadow: 2px .10px 3px rgba(0.35,0.35,0,.35);
+  font-size: clamp(30px, 8vw, 50px);
+  
+  font-weight: 1200;
+  -webkit-text-stroke: 0.01px #E6DCCB ;  /* delineado */
+  color: #6B7566;             /* solo contorno */
   transform: translateY(-30px);
   opacity:0;
   animation:fadeUp 1300ms ease forwards 1s;
@@ -281,16 +289,22 @@ background-image: var(--img1);
   opacity:0.8;
   
 }
- .section{
-  padding:184px 22px;
-  background-image: var(--img1);
-  background-repeat: no-repeat;   /* no se repite */
-  background-position: center;    /* centrada */
-  background-size: cover;
-   
+.section{
+  display: flex;
+   margin-top: 90px;
+  flex-direction: column;     /* uno debajo del otro */
+  align-items: center;        /* centra horizontal */
+  justify-content: center;    /* centra vertical */
+  text-align: center;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  min-height: 100vh; /* ocupa la pantalla */
 }
 
-.section.alt{padding:104px 22px; }
+.section.alt{padding:184px 22px; }
 
 .section.foto1{ background:var(--foto1); }
 
@@ -303,6 +317,21 @@ background-image: var(--img1);
 }
 
 /* cambiar fuentes de "nos acompañas" */
+
+} 
+#esperando{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#esperando h3{
+  margin-top: 20px;        /* separación real */
+  font-size: 2.5rem;       /* tamaño grande */
+  text-align: center;
+}
+
+
 #confirmar {
   font-family: 'Castoro Titling', serif; 
 }
@@ -335,11 +364,7 @@ background-image: var(--img1);
 /*ade aqui hasta donde dice cuenta regresiva estoy intentando poner la galeria de fotos si no funciona quitar esta parte */
 
 
-/* Cuenta regresiva */
-.countdown{
-  display:grid; grid-template-columns:repeat(4, minmax(60px, 0.8fr));
-  gap:6px; width:min(350px, 80%); margin:8px auto 0;
-}
+
 .tile{
   background:#fff; border: none 10px whitesmoke;
   border-radius:100px; padding:1px 1px;
@@ -359,13 +384,20 @@ background-image: var(--img1);
   font-size:20px;
   text-align: center;
   width: min(300px, 85vw);
-  background:#fff; border: hidden 15px floralwhite; border-radius:0px;
-  padding:24px; box-shadow:0 20px 28px rgba(0,0,0,.05);
+   transform: rotate(-8deg);
+  
    
 }
+.card-video-wrapper{
+  max-width: 20px;   /* ancho de la card */
+  padding: 12px;      /* espacio interno */
+  margin: 0 auto 4px;
+   transform: rotate(0deg);
+}
+
 .card2{
   font-size:20px;
-  width: min(1300px, 85vw);
+  width: min(1000px, 85vw);
   background:#fff; border: hidden 15px floralwhite; border-radius:0px;
   padding:24px; box-shadow:0 20px 28px rgba(0,0,0,.05);
    
@@ -619,23 +651,21 @@ img {
 }
 #snow{
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none; /* no bloquea clics */
-  overflow: hidden;
+  inset: 0;
+  pointer-events: none;
   z-index: 9999;
 }
 
 .snowflake{
-  position: absolute;
-  top: -10px;
-  color: white;
-  font-size: 1em;
+  position: fixed;       /* ⬅️ CLAVE */
+  top: -20px;
+  left: 0;
+  color: #f2c94c;
   user-select: none;
-  animation: fall linear infinite;
+  animation-name: fall;
+  animation-timing-function: linear;
 }
+
 
 @keyframes fall{
   to{
@@ -643,62 +673,81 @@ img {
   }
 }
 
+
 </style>
 </head>
 <body>
 <div id="snow"></div>
 <!-- PORTADA: 3 franjas con animaciones independientes -->
 <header class="hero" id="inicio">
-  <div class="monogram">
-  <span class="ital">Baby</span>
-  <span class="gwen">On The</span>
-  <span class="ital">Way</span>
-</div>
+  
 
 
-  <section class="section alt" >
+  <section class="section" id="esperando">
    
       <article class="card reveal">
-          <img src="https://github.com/EstasInvitado/BabyOnWay/blob/main/Ultrasonido1.png?raw=true" 
+          <img src="https://github.com/EstasInvitado/BabyOnWay/blob/main/UltrasonidoBebe.png?raw=true" 
        alt="Iglesia" class="card-img">
-       <h3>Estamos esperando un bebé!</h3>
+       <img src="https://github.com/EstasInvitado/BabyOnWay/blob/main/UltrasonidoBebe2.png?raw=true" 
+       alt="Iglesia" class="card-img">
+       </article>
+       <h3>¡Estamos esperando un bebé!</h3>
 </section>
     
+  
+
+  <div class="hero-text"> 
+  <div class="hero-names">
+    Bienvenido bebé<br> <span class="bebe-nombre">GUILLEN</span>
   </div>
 
-  <div class="hero-text">
-    <div class="hero-names">Bienvenido</div>
-       <div class="ornament-abajo"></div>
-    <div class="hero-date">2026</div>
- 
-  </div>
+  <div class="ornament-abajo"></div>
+  <div class="hero-date">Agosto 2026</div>
+</div>
 
   <i class="scroll-indicator" aria-hidden="true"></i>
 </header>
 
 
+<!-- PARTE 2 -->
+<section class="section" id="VIDEO">
+  
+  <article class="card reveal card-video-wrapper">
+  <video
+    class="card-video"
+    controls
+    preload="metadata"
+  >
+    <source src="https://github.com/EstasInvitado/BabyOnWay/raw/refs/heads/main/WhatsApp%20Video%202026-01-21%20at%206.28.22%20PM.mp4" type="video/mp4">
+  </video>
+</article>
+
+  <h3 class="esperando">¡Estamos esperando un bebé!</h3>
+</section>
+
+
+
 <script>
-const snowContainer = document.getElementById("snow");
+const snow = document.getElementById("snow");
 
-function createSnowflake(){
-  const snowflake = document.createElement("div");
-  snowflake.classList.add("snowflake");
-  snowflake.innerHTML = "⭐";
+function createStar(){
+  const star = document.createElement("div");
+  star.className = "snowflake";
+  star.textContent = "🍃";
 
-  snowflake.style.left = Math.random() * 100 + "vw";
-  snowflake.style.fontSize = Math.random() * 10 + 10 + "px";
-  snowflake.style.opacity = Math.random();
-  snowflake.style.animationDuration = Math.random() * 5 + 5 + "s";
+  star.style.left = Math.random() * 100 + "vw";
+  star.style.fontSize = Math.random() * 10 + 12 + "px";
+  star.style.opacity = Math.random();
+  star.style.animationDuration = Math.random() * 5 + 6 + "s";
 
-  snowContainer.appendChild(snowflake);
+  snow.appendChild(star);
 
-  setTimeout(() => {
-    snowflake.remove();
-  }, 10000);
+  setTimeout(() => star.remove(), 12000);
 }
 
-setInterval(createSnowflake, 200);
+setInterval(createStar, 250);
 </script>
+
 
 
 
@@ -715,56 +764,8 @@ const io = new IntersectionObserver((entries)=> {
 },{threshold:.18});
 revealEls.forEach(el=>io.observe(el));
 
-/* --------- Cuenta regresiva --------- */
-const target = new Date('2026-10-25T19:00:00');
-const d=document.getElementById('d'), h=document.getElementById('h'),
-      m=document.getElementById('m'), s=document.getElementById('s');
-function tick(){
-  const now = new Date();
-  let diff = Math.max(0, target-now);
-  const dd = Math.floor(diff/86400000); diff-=dd*86400000;
-  const hh = Math.floor(diff/3600000);  diff-=hh*3600000;
-  const mm = Math.floor(diff/60000);    diff-=mm*60000;
-  const ss = Math.floor(diff/1000);
-  d.textContent = String(dd).padStart(2,'0');
-  h.textContent = String(hh).padStart(2,'0');
-  m.textContent = String(mm).padStart(2,'0');
-  s.textContent = String(ss).padStart(2,'0');
-}
-tick(); setInterval(tick, 1000);
 
-/* --------- RSVP por WhatsApp + localStorage --------- */
-  const events = document.querySelectorAll('.event');
-const endEvent = document.querySelector('.event.end');
-const lineProgress = document.getElementById('lineProgress');
-const itinerary = document.querySelector('.itinerary');
 
-// Altura máxima permitida (hasta el punto del evento 5)
-const maxHeight =
-  endEvent.offsetTop +
-  endEvent.querySelector('.dot').offsetTop +
-  endEvent.querySelector('.dot').offsetHeight / 2;
-
-window.addEventListener('scroll', () => {
-  let scrollTop = window.scrollY + window.innerHeight * 0.6;
-  let start = itinerary.offsetTop;
-
-  let newHeight = scrollTop - start;
-
-  // Limitar crecimiento de la línea
-  if (newHeight < 0) newHeight = 0;
-  if (newHeight > maxHeight) newHeight = maxHeight;
-
-  lineProgress.style.height = newHeight + 'px';
-
-  // Activar / desactivar puntos
-  events.forEach(event => {
-    const eventTop = itinerary.offsetTop + event.offsetTop;
-    if (scrollTop >= eventTop){
-      event.classList.add('active');
-    } else {
-      event.classList.remove('active');
-    }
   });
 });
  
