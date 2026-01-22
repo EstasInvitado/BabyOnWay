@@ -389,11 +389,30 @@ background-image: var(--img1);
    
 }
 .card-video-wrapper{
-  max-width: 20px;   /* ancho de la card */
-  padding: 12px;      /* espacio interno */
-  margin: 0 auto 4px;
-   transform: rotate(0deg);
+  max-width: 420px;     /* tamaño pequeño pero usable */
+  width: 100%;
+  padding: 8px;         /* menos espacio interno */
+  margin: 0 auto;       /* centra horizontalmente */
+  transform: rotate(0deg);
+  display: block;
 }
+.video-section{
+  padding: 80px 20px;   /* separación arriba y abajo */
+}
+
+.video-container{
+  display: flex;
+  justify-content: center;
+}
+
+.video-bebe{
+  width: 100%;
+  max-width: 480px;     /* tamaño del video */
+  height: auto;
+  border-radius: 16px;
+}
+
+
 
 .card2{
   font-size:20px;
@@ -680,8 +699,6 @@ img {
 <div id="snow"></div>
 <!-- PORTADA: 3 franjas con animaciones independientes -->
 <header class="hero" id="inicio">
-  
-
 
   <section class="section" id="esperando">
    
@@ -694,36 +711,31 @@ img {
        <h3>¡Estamos esperando un bebé!</h3>
 </section>
     
-  
-
   <div class="hero-text"> 
   <div class="hero-names">
     Bienvenido bebé<br> <span class="bebe-nombre">GUILLEN</span>
   </div>
-
   <div class="ornament-abajo"></div>
   <div class="hero-date">Agosto 2026</div>
 </div>
-
   <i class="scroll-indicator" aria-hidden="true"></i>
 </header>
 
 
 <!-- PARTE 2 -->
-<section class="section" id="VIDEO">
-  
-  <article class="card reveal card-video-wrapper">
-  <video
-    class="card-video"
-    controls
-    preload="metadata"
-  >
-    <source src="https://github.com/EstasInvitado/BabyOnWay/raw/refs/heads/main/WhatsApp%20Video%202026-01-21%20at%206.28.22%20PM.mp4" type="video/mp4">
-  </video>
-</article>
-
-  <h3 class="esperando">¡Estamos esperando un bebé!</h3>
+<section class="section video-section" id="video-bebe">
+  <div class="video-container">
+    <video
+      class="video-bebe"
+      controls
+      preload="metadata"
+    >
+      <source src="https://github.com/EstasInvitado/BabyOnWay/raw/refs/heads/main/WhatsApp%20Video%202026-01-21%20at%206.28.22%20PM.mp4" type="video/mp4">
+      Tu navegador no soporta video HTML5
+    </video>
+  </div>
 </section>
+
 
 
 
